@@ -1,6 +1,6 @@
 # Gender-classification-for-jobs
 
-data is read and formatted and saved in data.pkl using preprocess.ipynb
+data is read and formatted and saved in [data.pkl](data.pkl) using [preprocess.ipynb](preprocess.ipynb)
 to read data.pkl use
 ```
 with open("data.pkl",'rb') as f:
