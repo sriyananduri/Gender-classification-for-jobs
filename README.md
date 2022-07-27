@@ -114,6 +114,6 @@ plot(3)
 
 # Conclusion : 
 Boys are less likely to get through the last rounds than
-women which usually are interview and HR rounds but boys are more likely
-**sometimes** in the earlier rounds
+Girls are which usually are interview or HR rounds 
+but Boys are more likely **sometimes** in the earlier rounds
 
