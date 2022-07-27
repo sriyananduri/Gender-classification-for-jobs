@@ -1,9 +1,7 @@
 # Gender-classification-for-jobs
 
 the dataset has been taken from placement cell mails and for privacy
-reasons all its processing code and data has been stored in
-[Gender-classification-for-jobs.zip](Gender-classification-for-jobs.zip)
-with a password contact admins for the password
+reasons all its processing code and data is in a private repo
 
 the dataset consisted of names of students who passed through each round
 we data from four companies as such and cleaned it so it only has names
