@@ -18,19 +18,6 @@ numbers in each rounds that data is stored in
 [GenderDataPublic.pkl](GenderDataPublic.pkl)
 
 ``` {.python}
-import pickle
-import matplotlib as mpl
-mpl.rcParams['figure.figsize'] = (10,8)
-mpl.rcParams['axes.grid'] = False
-import matplotlib.pyplot as plt
-```
-
-``` {.python}
-with open("GenderDataPublic.pkl","rb") as f:
-  data = pickle.load(f)
-```
-
-``` {.python}
 data
 ```
 
@@ -46,30 +33,6 @@ data
 we calculate the likelyhood to goto next round as -100/slope it is
 calculated for each round and stored in array which is later used to
 show likelyhood
-
-``` {.python}
-def slope(y):
-  x = [i for i in range(1,len(y)+1)]
-  m = []
-  for i in range(1,len(y)):
-    dm = (y[i]-y[i-1])/(x[i]-x[i-1])
-    m.append(round(100/(abs(dm)+0.0001),2))
-  return m
-```
-
-``` {.python}
-def plot(company):
-  global data
-  f = data[company][0]
-  m = data[company][1]
-  labels = [i for i in range(1,len(data[company][0])+1)]
-  plt.bar(labels,m,align="edge",width=0.4,label="Boys")
-  plt.bar(labels,f,align="edge",width=-0.4,label="Girls")
-  plt.plot(labels,m)
-  plt.plot(labels,f)
-  plt.legend(loc='upper right')
-  print("the likelyhood score for each round are as follows : \n", {'Boys':slope(m),'Girls':slope(f)})
-```
 
 ``` {.python}
 plot(0)
